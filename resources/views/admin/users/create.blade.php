@@ -28,8 +28,8 @@
         </select>
     </div>
     <div class="form-group">
-        <label name="file">File:</label>
-        <input type="file" name="file"/>
+        <label name="photo_id">File:</label>
+        <input type="file" name="photo_id"/>
     </div>
     <div class="form-group">
         <label name="password">Password:</label>

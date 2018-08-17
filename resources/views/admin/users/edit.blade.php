@@ -50,10 +50,15 @@
         </div>
 
         <div class="form-group">
-            <button class="btn btn-primary" type="submit">Edit User</button>
-            <button class="btn btn-danger">Cancel</button>
+            <button class="btn btn-primary col-sm-6" type="submit">Update User</button>
         </div>
     </form>
+
+        <form method="post" action="{{route('admin.users.destroy',$user->id)}}">
+            {{method_field('DELETE')}}
+            {{csrf_field()}}
+            <button class="btn btn-danger col-sm-6" type="submit">Delete User</button>
+        </form>
     </div>
     </div>
     @include('includes.form-error')

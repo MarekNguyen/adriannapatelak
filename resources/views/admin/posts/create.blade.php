@@ -12,8 +12,9 @@
             <label name="category_id">Category:</label>
             <select name="category_id" class="form-control">
                 <option value="" selected disabled hidden>Choose Category</option>
-                <option value="1">PHP</option>
-                <option value="2">JavaScript</option>
+                @foreach($categories as $category)
+                    <option value="{{$category->id}}">{{$category->name}}</option>
+                    @endforeach
             </select>
         </div>
         <div class="form-group">
